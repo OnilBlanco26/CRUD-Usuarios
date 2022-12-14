@@ -1,0 +1,172 @@
+.form-container{
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0px);
+    transition: transform 1.5s ease;
+}
+
+.message-create {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(46, 46, 46, 0.788);
+    border: 1px solid #aaa7;
+    color: rgb(255, 255, 255);
+    border-radius: 0.5em;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+}
+
+.was-validated {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    animation-delay: 3000ms;
+    animation: fadeIn 7s ease;
+}
+
+.was-validated:after {
+    content: 'Se ha creado el usuario correctamente';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.was-deleted {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    animation-delay: 3000ms;
+    animation: fadeIn 7s ease;
+}
+
+.was-deleted:after {
+    content: 'Se ha eliminado el usuario correctamente';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.was-cancelled {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    animation-delay: 3000ms;
+    animation: fadeIn 7s ease;
+}
+
+.was-cancelled:after {
+    content: 'Se ha cancelado la operación';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.was-updated {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+    animation-delay: 3000ms;
+    animation: fadeIn 7s ease;
+}
+
+.was-updated:after {
+    content: 'Se ha actualizado el usuario correctamente';
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.bx-check {
+    transition-delay: 1s;
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: rgb(23, 245, 23);
+}
+
+/* animacion de aparicion y desaparicion*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    50% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+.app__title {
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+
+
+.close__form {
+    transform: translateX(-100%);
+    transition: transform 3s ease;
+}
+
+
+.user-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+.app__btn {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: 1px solid #aaa7;
+    background-color: rgba(16, 179, 219, 1);
+    color: #fff;
+    font-size: 1.2rem;
+    width: 8em;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    font-weight: 700;
+}
+
+.app__btn:hover {
+    background-color: rgba(16, 179, 219, 0.87);
+}
+
+.app__btn:active {
+    transform: scale(0.95);
+}

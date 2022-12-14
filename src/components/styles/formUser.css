@@ -1,0 +1,81 @@
+.form {
+    width: 100%;
+    max-width: 400px;
+    padding: 1.3em;
+    border-radius: 0.5em;
+    border: 1px solid #aaa7;
+    margin-bottom: 2em;
+    background-color: #fff;
+    position: relative;
+}
+
+.form__x {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 1.5rem;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.form__x:hover {
+    transform: scale(1.2);
+    color: #f00;
+}
+
+.form__x:active {
+    transform: scale(0.95);
+}
+
+.form__title {
+    margin-bottom: 0.6em;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.form__div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.form__label {
+    font-weight: 200;
+    position: relative;
+    left: 0.2em;
+}
+
+.form__input {
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: 1px solid #aaa7;
+    background-color: #fff;
+    color: #aaa;
+    font-size: 1.2rem;
+}
+
+.form__btn {
+    
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: 1px solid #aaa7;
+    background-color: #fff;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+    width: 100%;
+    background-color: rgba(16, 179, 219, 0.87);
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 1em;
+}
+
+.form__btn:hover {
+    background-color: rgba(16, 179, 219, 1);
+}
+
+.form__btn:active {
+    transform: scale(0.95);
+}
