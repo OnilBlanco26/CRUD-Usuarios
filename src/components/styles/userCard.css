@@ -4,6 +4,7 @@
     padding: 1.3em;
     border-radius: 0.5em;
     border: 1px solid #aaa7;
+    background: #e2e2e2
 }
 
 
@@ -11,6 +12,7 @@
     margin-bottom: 0.6em;
     font-size: 1.2rem;
     text-align: center;
+    font-weight: 700;
 }
 
 .card__body {
@@ -28,7 +30,7 @@
 
 .card__span {
     text-transform: uppercase;
-    color: #aaa;
+    color: rgb(38, 157, 226);
     font-size: 0.8rem;
     position: relative;
     left: 0.2em;

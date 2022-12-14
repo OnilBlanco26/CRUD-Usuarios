@@ -29,6 +29,7 @@
 }
 
 .form__title {
+    
     margin-bottom: 0.6em;
     font-size: 1.5rem;
     text-align: center;
@@ -67,13 +68,13 @@
     font-weight: 700;
     font-size: 1.2rem;
     width: 100%;
-    background-color: rgba(16, 179, 219, 0.87);
+    background-color: rgb(16, 80, 219);
     transition: background 0.3s ease, transform 0.3s ease;
     margin-top: 1em;
 }
 
 .form__btn:hover {
-    background-color: rgba(16, 179, 219, 1);
+    background-color: rgba(28, 77, 182, 0.74);
 }
 
 .form__btn:active {

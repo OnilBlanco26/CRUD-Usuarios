@@ -119,6 +119,7 @@
 
 
 .app__title {
+    color: #fff;
     font-size: 3rem;
     text-align: center;
     position: relative;
@@ -149,12 +150,12 @@
 
 .app__btn {
     position: fixed;
-    bottom: 2em;
+    bottom: 1em;
     right: 2em;
     padding: 0.5em 1em;
     border-radius: 0.5em;
     border: 1px solid #aaa7;
-    background-color: rgba(16, 179, 219, 1);
+    background-color: rgb(16, 80, 219);
     color: #fff;
     font-size: 1.2rem;
     width: 8em;
@@ -164,7 +165,7 @@
 }
 
 .app__btn:hover {
-    background-color: rgba(16, 179, 219, 0.87);
+    background-color: rgba(1, 78, 245, 0.61);
 }
 
 .app__btn:active {
